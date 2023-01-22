@@ -7,7 +7,7 @@ const output = document.getElementById("output");
 
 calculateBtn.addEventListener("click", function () {
     if (!dateInput.value || !timeInput.value || !numberInput.value) {
-        alert("Please fill all the fields");
+        alert("נא למלא את כל הפרטים");
         return
     }
     const inputTime = new Date("1970-01-01T" + timeInput.value + "Z");
