@@ -11,27 +11,30 @@
     <nav class="bg-cyan-900 p-6">
         <div class="flex justify-between items-center">
             <a class="text-white text-lg mr-4">צחוקים</a>
-            <a class="text-white text-2xl font-medium">מחשבון גימלים</a>
+            <h1 class="text-white text-4xl font-medium">מחשבון גימלים</h1>
         </div>
     </nav>
 
     <div class="relative rounded-md shadow-sm px-2">
+        <div class="py-2 px-6 items-end flex justify-end">
+            <a class="text-xl">הכניסו את תאריך, שעה ומספר ימי הגימל שקיבלתם</a>
+        </div>
         <div class="flex items-center justify-center py-4">
-            <input type="date" id="dateInput" placeholder="aa"
-                class="bg-slate-200 form-input py-3 px-4 block mx-2 leading-5 transition duration-150 ease-in-out border border-cyan-600 placeholder-slate-500 rounded-md focus:outline-none focus:shadow-outline-blue focus:border-cyan-500 focus:z-10 sm:text-xl sm:leading-5" />
-            <input type="time" id="timeInput" placeholder="aa"
-                class="bg-slate-200 form-input py-3 px-4 block mx-2 leading-5 transition duration-150 ease-in-out border border-cyan-600 placeholder-slate-500 rounded-md focus:outline-none focus:shadow-outline-blue focus:border-cyan-500 focus:z-10 sm:text-xl sm:leading-5" />
+            <input type="date" id="dateInput"
+                class="bg-slate-200 form-input py-3 px-4 block mx-2 leading-5 transition duration-150 ease-in-out border border-cyan-600 placeholder-slate-500 rounded-lg focus:outline-none focus:shadow-outline-blue focus:border-cyan-500 focus:z-10 sm:text-xl sm:leading-5" />
+            <input type="time" id="timeInput"
+                class="bg-slate-200 form-input py-3 px-4 block mx-2 leading-5 transition duration-150 ease-in-out border border-cyan-600 placeholder-slate-500 rounded-lg focus:outline-none focus:shadow-outline-blue focus:border-cyan-500 focus:z-10 sm:text-xl sm:leading-5" />
             <input type="number" id="numberInput"
-                class="bg-slate-200 form-input py-3 px-4 block mx-2 leading-5 transition duration-150 ease-in-out border border-cyan-600 placeholder-slate-500 rounded-md focus:outline-none focus:shadow-outline-blue focus:border-cyan-500 focus:z-10 sm:text-xl sm:leading-5"
-                size="2" min="0" max="99" />
+                class="bg-slate-200 w-44 form-input py-3 px-4 block mx-2 leading-5 transition duration-150 ease-in-out border border-cyan-600 placeholder-slate-500 rounded-lg focus:outline-none focus:shadow-outline-blue focus:border-cyan-500 focus:z-10 sm:text-xl sm:leading-5"
+                size="2" min="0" max="99" placeholder="כמות הגימלים"/>
         </div>
         <div class="flex items-center justify-center py-4">
             <button id="calculateBtn" type="button"
                 class="text-3xl px-5 py-3 mx-2  text-white bg-cyan-700 rounded-md hover:bg-cyan-800 active:outline-none active:bg-cyan-600">חישוב</button>
         </div>
         <div class="flex items-center justify-center py-4">
-            <div id="output"
-                class="bg-slate-200 py-3 px-4 mx-2 w-80 h-16 block leading-5 transition duration-150 ease-in-out border border-cyan-600 placeholder-slate-500 rounded-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-xl sm:leading-5">
+            <div id="output" style="line-height: 1.75;"
+                class="flex items-center justify-center bg-cyan-700 font-medium py-3 px-4 mx-2 w-80 h-32 transition duration-150 ease-in-out border border-cyan-600 placeholder-slate-500 rounded-lg focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-2xl sm:leading-5">
             </div>
         </div>
     </div>

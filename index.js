@@ -26,6 +26,6 @@ calculateBtn.addEventListener("click", function () {
     if (dd < 10) dd = '0' + dd;
     if (mm < 10) mm = '0' + mm;
 
-    const formattedDate = "החייל צריך לחזור לבסיס בתאריך: " + dd + '/' + mm + '/' + yyyy;
+    const formattedDate = "אתם צריכים לחזור לבסיס בתאריך: " + dd + '/' + mm + '/' + yyyy;
     output.innerHTML = formattedDate;
 });
