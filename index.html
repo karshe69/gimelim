@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta  name="google-site-verification" content="HKeYzyLO8ba7WwPV5Cv5ziAsCyawsF6A6IvVgTjvR_o">
-    <meta name="description" content="מחשבון גימלים, כלי לחישוב יום חזרה לבסיס לאחר קבלת גימלים על פי תאריך, ושעת קבלת הגימלים.">
+    <meta name="description" content="מחשב את יום חזרה לבסיס לאחר קבלת גימלים.">
     <meta name='url' content='https://gimelim-calculator.onrender.com/'>
     <meta name='robots' content='index,follow'>
     <title>מחשבון גימלים</title>
     <link href="/styles/style.css" , rel="stylesheet">
+    <link rel="icon" href="/GimelCalcLogo.png">
 </head>
 
-<body class="bg-slate-100">
-    <nav class="bg-cyan-900 p-6">
+<body class="bg-white">
+    <nav class="bg-teal-600 p-6">
         <div class="flex justify-between items-center">
             <a class="text-white text-lg mr-4">צחוקים</a>
             <h1 class="text-white text-4xl font-medium">מחשבון גימלים</h1>
@@ -22,7 +23,7 @@
     <div class="relative justify-center flex px-2 py-16">
         <div class="flex items-center justify-center py-3 px-4">
             <div id="output" style="line-height: 2;"
-                class="flex items-center justify-center text-right text-white bg-cyan-700 font-medium py-3 px-4 mx-2 w-80 h-72 transition duration-150 ease-in-out border border-cyan-600 placeholder-slate-500 rounded-lg focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-3xl sm:leading-5">
+                class="flex items-center justify-center text-right text-white bg-teal-600 font-medium py-3 px-4 mx-2 w-80 h-72 transition duration-150 ease-in-out border border-teal-600 placeholder-slate-500 rounded-lg focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-3xl sm:leading-5">
                 אתם צריכים לחזור לבסיס בתאריך
             </div>
         </div>
@@ -33,18 +34,18 @@
             <div class="py-4">
                 <div class="flex items-center justify-center">
                     <input type="date" id="dateInput"
-                        class="bg-slate-200 form-input w-72 py-3 px-4 my-2 leading-5 transition duration-150 ease-in-out border border-cyan-600 placeholder-slate-500 rounded-lg focus:outline-none focus:shadow-outline-blue focus:border-cyan-500 focus:z-10 sm:text-xl sm:leading-5" />
+                        class="bg-slate-100 form-input w-72 py-3 px-4 my-2 leading-5 transition duration-150 ease-in-out border border-teal-700 placeholder-slate-500 rounded-lg focus:outline-none focus:shadow-outline-blue focus:border-teal-500 focus:z-10 sm:text-xl sm:leading-5" />
                 </div>
                 <div class="flex items-center justify-center my-2">
                     <input type="time" id="timeInput"
-                        class="bg-slate-200 form-input py-3 px-4 block mx-3 leading-5 transition duration-150 ease-in-out border border-cyan-600 placeholder-slate-500 rounded-lg focus:outline-none focus:shadow-outline-blue focus:border-cyan-500 focus:z-10 sm:text-xl sm:leading-5" />
+                        class="bg-slate-100 form-input py-3 px-4 block mx-3 leading-5 transition duration-150 ease-in-out border border-teal-700 placeholder-slate-500 rounded-lg focus:outline-none focus:shadow-outline-blue focus:border-teal-500 focus:z-10 sm:text-xl sm:leading-5" />
                     <input type="number" id="numberInput"
-                        class="bg-slate-200 w-44 form-input py-3 px-4 block mx-3 my-2 leading-5 transition duration-150 ease-in-out border border-cyan-600 placeholder-slate-500 rounded-lg focus:outline-none focus:shadow-outline-blue focus:border-cyan-500 focus:z-10 sm:text-xl sm:leading-5"
+                        class="bg-slate-100 w-44 form-input py-3 px-4 block mx-3 my-2 leading-5 transition duration-150 ease-in-out border border-teal-700 placeholder-slate-500 rounded-lg focus:outline-none focus:shadow-outline-blue focus:border-teal-500 focus:z-10 sm:text-xl sm:leading-5"
                         size="2" min="0" max="99" placeholder="כמות הגימלים" />
                 </div>
                 <div class="flex items-center justify-center">
                     <button id="calculateBtn" type="button"
-                        class="text-3xl px-4 py-3 mx-2 w-44 text-white bg-cyan-700 rounded-md hover:bg-cyan-800 active:outline-none active:bg-cyan-600">חישוב</button>
+                        class="text-3xl px-4 py-3 mx-2 w-44 text-white bg-teal-600 rounded-md hover:bg-teal-700 active:outline-none active:bg-teal-500">חישוב</button>
                 </div>
             </div>
         </div>
