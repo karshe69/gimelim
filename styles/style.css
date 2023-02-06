@@ -654,8 +654,16 @@ video {
 }
 @media (min-width: 640px) {
 
+  .sm\:h-auto {
+    height: auto;
+  }
+
   .sm\:w-1\/2 {
     width: 50%;
+  }
+
+  .sm\:items-center {
+    align-items: center;
   }
 
   .sm\:text-3xl {
@@ -670,6 +678,18 @@ video {
 
   .sm\:leading-5 {
     line-height: 1.25rem;
+  }
+}
+@media (min-width: 768px) {
+
+  .md\:flex {
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+
+  .lg\:flex {
+    display: flex;
   }
 }
 @media (min-width: 1280px) {
