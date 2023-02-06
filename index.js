@@ -11,12 +11,7 @@ calculateBtn.addEventListener("click", function () {
         return
     }
     const inputTime = new Date("1970-01-01T" + timeInput.value + "Z");
-    const minTime = new Date("1970-01-01T08:00:00Z");
     var days = numberInput.value
-    days++
-    if (inputTime < minTime) {
-        days--
-    }
     var inputDate = new Date(dateInput.value);
     inputDate.setDate(inputDate.getDate() + days);
     const yyyy = inputDate.getFullYear();
