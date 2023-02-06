@@ -10,10 +10,8 @@ calculateBtn.addEventListener("click", function () {
         alert("נא למלא את כל הפרטים");
         return
     }
-    const inputTime = new Date("1970-01-01T" + timeInput.value + "Z");
-    var days = numberInput.value
     var inputDate = new Date(dateInput.value);
-    inputDate.setDate(inputDate.getDate() + days);
+    inputDate.setDate(inputDate.getDate() + parseInt(numberInput.value));
     const yyyy = inputDate.getFullYear();
     let mm = inputDate.getMonth() + 1; // Months start at 0!
     let dd = inputDate.getDate();
