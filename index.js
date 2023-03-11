@@ -11,7 +11,7 @@ calculateBtn.addEventListener("click", function () {
         return
     }
     var inputDate = new Date(dateInput.value);
-    inputDate.setDate(inputDate.getDate() + parseInt(numberInput.value));
+    inputDate.setDate(inputDate.getDate() + parseInt(numberInput.value) + 1);
     const yyyy = inputDate.getFullYear();
     let mm = inputDate.getMonth() + 1; // Months start at 0!
     let dd = inputDate.getDate();
